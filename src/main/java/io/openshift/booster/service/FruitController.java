@@ -86,6 +86,7 @@ public class FruitController {
         verifyCorrectPayload(fruit);
 
         fruit.setId(id);
+        fruit.setUpdated(true);
         return repository.save(fruit);
     }
 
